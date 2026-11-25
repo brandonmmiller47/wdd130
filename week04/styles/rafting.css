@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #ff9d00;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #000000;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav a {
+    display: block;
+    background-color: #fff;
+    color: var(--accent2-color);
+    border: 1px solid var(--accent2-color);
+    padding: 10px 24px;
+    text-decoration: none;
+}
+
+header img {
+    margin: 10px;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(225, 225, 225, 0.85);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 8px 16px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+.socialmedia {
+    grid-column: 2;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
